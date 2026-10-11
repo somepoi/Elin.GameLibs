@@ -1,0 +1,794 @@
+{
+  "schemaVersion": 1,
+  "steamAppId": 2135150,
+  "steamBuildId": "25859432",
+  "revision": 0,
+  "packageVersion": "0.25859432.0",
+  "assemblyFormat": "Original DLLs; bodies/resources/visibility preserved",
+  "excludedFrameworkAssemblies": [
+    "Mono.Security.dll",
+    "mscorlib.dll",
+    "netstandard.dll",
+    "System.ComponentModel.Composition.dll",
+    "System.ComponentModel.DataAnnotations.dll",
+    "System.Configuration.dll",
+    "System.Core.dll",
+    "System.Data.DataSetExtensions.dll",
+    "System.Data.dll",
+    "System.Design.dll",
+    "System.DirectoryServices.dll",
+    "System.dll",
+    "System.Drawing.Design.dll",
+    "System.Drawing.dll",
+    "System.EnterpriseServices.dll",
+    "System.IO.Compression.dll",
+    "System.IO.Compression.FileSystem.dll",
+    "System.Memory.dll",
+    "System.Net.Http.dll",
+    "System.Numerics.dll",
+    "System.Runtime.Serialization.dll",
+    "System.Runtime.Serialization.Formatters.Soap.dll",
+    "System.Security.dll",
+    "System.ServiceModel.Internals.dll",
+    "System.Text.Encoding.CodePages.dll",
+    "System.Transactions.dll",
+    "System.Web.ApplicationServices.dll",
+    "System.Web.dll",
+    "System.Web.Services.dll",
+    "System.Windows.Forms.dll",
+    "System.Xml.dll",
+    "System.Xml.Linq.dll"
+  ],
+  "assemblies": [
+    {
+      "name": "Accessibility.dll",
+      "assemblyVersion": "4.0.0.0",
+      "sourceSha256": "73e1e30d3fe094bb18bf1ce7addaab2f7fa18db0aa29a2a7facc9280d6d3da09",
+      "referenceSha256": "73e1e30d3fe094bb18bf1ce7addaab2f7fa18db0aa29a2a7facc9280d6d3da09"
+    },
+    {
+      "name": "AeLa.EasyFeedback.Demo.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "0bb584b6772681e0f829c43dc965a15210051ae539f114c9b992b23e3ac2073d",
+      "referenceSha256": "0bb584b6772681e0f829c43dc965a15210051ae539f114c9b992b23e3ac2073d"
+    },
+    {
+      "name": "AeLa.EasyFeedback.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "22e12d74c917c2818264278b7c42dcf910d93059d5cd12e1938fd34ee359d1cd",
+      "referenceSha256": "22e12d74c917c2818264278b7c42dcf910d93059d5cd12e1938fd34ee359d1cd"
+    },
+    {
+      "name": "Assembly-CSharp-firstpass.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "3f179a5430f735f090e01224380c137b4ffe118dd28cf1996fac148375647d57",
+      "referenceSha256": "3f179a5430f735f090e01224380c137b4ffe118dd28cf1996fac148375647d57"
+    },
+    {
+      "name": "Assembly-CSharp.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "6f265f70b59242bb76e3dcdd657f7730ff723af0b5c8a75c4cecbd5592b31d1c",
+      "referenceSha256": "6f265f70b59242bb76e3dcdd657f7730ff723af0b5c8a75c4cecbd5592b31d1c"
+    },
+    {
+      "name": "ClassLibrary2.dll",
+      "assemblyVersion": "1.0.0.0",
+      "sourceSha256": "2cfa6cb8aee60bfa7b082c6c1018397d40dc32986a738b16b7edaa8870389c0e",
+      "referenceSha256": "2cfa6cb8aee60bfa7b082c6c1018397d40dc32986a738b16b7edaa8870389c0e"
+    },
+    {
+      "name": "com.rlabrecque.steamworks.net.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "bdaf1b279ac7aa6b3e68e488c01b6cbed75d2779398b6d2a63c185497212f517",
+      "referenceSha256": "bdaf1b279ac7aa6b3e68e488c01b6cbed75d2779398b6d2a63c185497212f517"
+    },
+    {
+      "name": "DemiLib.dll",
+      "assemblyVersion": "1.0.0.0",
+      "sourceSha256": "a6057bbc88d44ea11a8e838dd4ce07484ed690859a3f00e00ae69e872500ad9c",
+      "referenceSha256": "a6057bbc88d44ea11a8e838dd4ce07484ed690859a3f00e00ae69e872500ad9c"
+    },
+    {
+      "name": "DOTween.dll",
+      "assemblyVersion": "1.0.0.0",
+      "sourceSha256": "1c1eb6ed1ea426e7af85f8e207c0603709eab9366af564e38d43fa3070fc516b",
+      "referenceSha256": "1c1eb6ed1ea426e7af85f8e207c0603709eab9366af564e38d43fa3070fc516b"
+    },
+    {
+      "name": "DOTweenPro.dll",
+      "assemblyVersion": "1.0.0.0",
+      "sourceSha256": "4599676663f1db3959aace6a0810e328c618c1c67db9444cd4f2b10e9137ecf3",
+      "referenceSha256": "4599676663f1db3959aace6a0810e328c618c1c67db9444cd4f2b10e9137ecf3"
+    },
+    {
+      "name": "Elin.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "dfa5310ca0e9f297b85d4c693c57237676aff4e22335473b5f31bb8316e7eeb1",
+      "referenceSha256": "dfa5310ca0e9f297b85d4c693c57237676aff4e22335473b5f31bb8316e7eeb1"
+    },
+    {
+      "name": "Heathen.Core.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "4e9fc066b2ea358bae6f3a8cc6e05bd5a58ecec330512c3b956cae0d4415ccea",
+      "referenceSha256": "4e9fc066b2ea358bae6f3a8cc6e05bd5a58ecec330512c3b956cae0d4415ccea"
+    },
+    {
+      "name": "Heathen.Steamworks.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "4b127f14de1ad7cc3c9b1591fc64b7be976c5d7301564734b254f1e3748e2f69",
+      "referenceSha256": "4b127f14de1ad7cc3c9b1591fc64b7be976c5d7301564734b254f1e3748e2f69"
+    },
+    {
+      "name": "ICSharpCode.SharpZipLib.dll",
+      "assemblyVersion": "1.2.0.246",
+      "sourceSha256": "cfc48c23e19b2e1e559e69babaa951537f29d35afe056da84b4611527e5ae01d",
+      "referenceSha256": "cfc48c23e19b2e1e559e69babaa951537f29d35afe056da84b4611527e5ae01d"
+    },
+    {
+      "name": "INIFileParser.dll",
+      "assemblyVersion": "2.5.2.0",
+      "sourceSha256": "f81ba0dd987d46a67b1879ef4ee11c14f32940ff211eace347a68e42bf272554",
+      "referenceSha256": "f81ba0dd987d46a67b1879ef4ee11c14f32940ff211eace347a68e42bf272554"
+    },
+    {
+      "name": "Ionic.Zip.Unity.dll",
+      "assemblyVersion": "1.9.1.9000",
+      "sourceSha256": "5d4111fb777a0850640a98bc0ee579820cff1f1a4f8bb93105fddae6a9525632",
+      "referenceSha256": "5d4111fb777a0850640a98bc0ee579820cff1f1a4f8bb93105fddae6a9525632"
+    },
+    {
+      "name": "LZ4.dll",
+      "assemblyVersion": "1.0.10.93",
+      "sourceSha256": "ccf58f86bfb042c6bd329d336518eef9bd1fc1c280f44d48df8780cc00e77c97",
+      "referenceSha256": "ccf58f86bfb042c6bd329d336518eef9bd1fc1c280f44d48df8780cc00e77c97"
+    },
+    {
+      "name": "Minigame.Basket.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "c7290fac9ea1d8a9e28196f84f483d370de916f5e6edf87f85b49f33e226ded5",
+      "referenceSha256": "c7290fac9ea1d8a9e28196f84f483d370de916f5e6edf87f85b49f33e226ded5"
+    },
+    {
+      "name": "Minigame.Blackjack.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "00c098c2a7dbe5e9e0183fae2b3506e6296276e7658a93324e20960b353ce4f1",
+      "referenceSha256": "00c098c2a7dbe5e9e0183fae2b3506e6296276e7658a93324e20960b353ce4f1"
+    },
+    {
+      "name": "Mono.Data.Sqlite.dll",
+      "assemblyVersion": "4.0.0.0",
+      "sourceSha256": "445767326e5afa4d3276016909e6edf1e365399e5ac5c4d307ff0a950c7c4e20",
+      "referenceSha256": "445767326e5afa4d3276016909e6edf1e365399e5ac5c4d307ff0a950c7c4e20"
+    },
+    {
+      "name": "Mono.Posix.dll",
+      "assemblyVersion": "4.0.0.0",
+      "sourceSha256": "cca501e6d0ddbd64247607b98a9189fdd045c44dfcac348033642a46fb906ba3",
+      "referenceSha256": "cca501e6d0ddbd64247607b98a9189fdd045c44dfcac348033642a46fb906ba3"
+    },
+    {
+      "name": "Mono.WebBrowser.dll",
+      "assemblyVersion": "4.0.0.0",
+      "sourceSha256": "d74a0cd7c015f12215c0be8d8068b3f234479de83187a06b1a66b66a69847b9d",
+      "referenceSha256": "d74a0cd7c015f12215c0be8d8068b3f234479de83187a06b1a66b66a69847b9d"
+    },
+    {
+      "name": "NaturalStringExtensions.dll",
+      "assemblyVersion": "3.0.0.0",
+      "sourceSha256": "ef975162f88121ad229d17ff0f3ca226d83528a8a1ac672b089752ef610c7479",
+      "referenceSha256": "ef975162f88121ad229d17ff0f3ca226d83528a8a1ac672b089752ef610c7479"
+    },
+    {
+      "name": "Newtonsoft.Json.dll",
+      "assemblyVersion": "12.0.0.0",
+      "sourceSha256": "08363fe12e42bd5bb80ef09a7f8847723f6c57341d46080eb8e5f6c5b6b37a7b",
+      "referenceSha256": "08363fe12e42bd5bb80ef09a7f8847723f6c57341d46080eb8e5f6c5b6b37a7b"
+    },
+    {
+      "name": "Novell.Directory.Ldap.dll",
+      "assemblyVersion": "4.0.0.0",
+      "sourceSha256": "ef0651966e344e6f7ce009cbf84e051d855ba8a3c47c9f166f2f28f26481dc9c",
+      "referenceSha256": "ef0651966e344e6f7ce009cbf84e051d855ba8a3c47c9f166f2f28f26481dc9c"
+    },
+    {
+      "name": "NPOI.dll",
+      "assemblyVersion": "1.2.3.0",
+      "sourceSha256": "490c657aefcfd00089e87baf043d100c8499cb6e3184155b99945fcffb5b1607",
+      "referenceSha256": "490c657aefcfd00089e87baf043d100c8499cb6e3184155b99945fcffb5b1607"
+    },
+    {
+      "name": "NPOI.OOXML.dll",
+      "assemblyVersion": "1.2.3.0",
+      "sourceSha256": "ea4eab6bdab4444e6fb30e739aa390cc635c53f81d63338bac99d61727b1ec0b",
+      "referenceSha256": "ea4eab6bdab4444e6fb30e739aa390cc635c53f81d63338bac99d61727b1ec0b"
+    },
+    {
+      "name": "NPOI.OpenXml4Net.dll",
+      "assemblyVersion": "1.2.3.0",
+      "sourceSha256": "4660d7b511c834e2f69298da67eedcda109cc84002935b8c09c6b867297e1fc4",
+      "referenceSha256": "4660d7b511c834e2f69298da67eedcda109cc84002935b8c09c6b867297e1fc4"
+    },
+    {
+      "name": "NPOI.OpenXmlFormats.dll",
+      "assemblyVersion": "1.2.3.0",
+      "sourceSha256": "cc40dfa52479054d577116a43e96864b160ecd5982ebaf97076c724e452ab17a",
+      "referenceSha256": "cc40dfa52479054d577116a43e96864b160ecd5982ebaf97076c724e452ab17a"
+    },
+    {
+      "name": "Ookii.Dialogs.dll",
+      "assemblyVersion": "1.0.0.0",
+      "sourceSha256": "5c8805ddf818a2c0a3a44a235e904a9896bd6aa8ede4d5ff386ccf945f808df7",
+      "referenceSha256": "5c8805ddf818a2c0a3a44a235e904a9896bd6aa8ede4d5ff386ccf945f808df7"
+    },
+    {
+      "name": "Plugins.ActorSystem.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "255093815e8b3534430f1440290f1299100119e90ce517c25f7b974d4e0b23ff",
+      "referenceSha256": "255093815e8b3534430f1440290f1299100119e90ce517c25f7b974d4e0b23ff"
+    },
+    {
+      "name": "Plugins.BaseCore.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "ddf490ae54de6115e355d5465934bc5ed59076ee9ddd37a75e47ab3cf9cab7f2",
+      "referenceSha256": "ddf490ae54de6115e355d5465934bc5ed59076ee9ddd37a75e47ab3cf9cab7f2"
+    },
+    {
+      "name": "Plugins.Calc.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "578359e5debd8825c0b1d8ad59587b75bb0ffb0dd59b39efa29d4681027b333e",
+      "referenceSha256": "578359e5debd8825c0b1d8ad59587b75bb0ffb0dd59b39efa29d4681027b333e"
+    },
+    {
+      "name": "Plugins.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "ebd3cb9aa61a0137c7c0f15b0e7a42fb6cfd22180e520e6e4bc50d266b328fe6",
+      "referenceSha256": "ebd3cb9aa61a0137c7c0f15b0e7a42fb6cfd22180e520e6e4bc50d266b328fe6"
+    },
+    {
+      "name": "Plugins.Dungen.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "496289c0a507ed991946a56ae0d439f43dcb407dc09826a9c80cafe0c9c21a17",
+      "referenceSha256": "496289c0a507ed991946a56ae0d439f43dcb407dc09826a9c80cafe0c9c21a17"
+    },
+    {
+      "name": "Plugins.Etc.Markov.dll",
+      "assemblyVersion": "0.0.7.0",
+      "sourceSha256": "51784b3f7526b482a4bd5568a70bccb449086aa4824ef7a85b99e4179c003363",
+      "referenceSha256": "51784b3f7526b482a4bd5568a70bccb449086aa4824ef7a85b99e4179c003363"
+    },
+    {
+      "name": "Plugins.Gif.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "f3183c20a9663e0eead922517d78ad3c673a897cddbd2fb834a1a6f8caa32537",
+      "referenceSha256": "f3183c20a9663e0eead922517d78ad3c673a897cddbd2fb834a1a6f8caa32537"
+    },
+    {
+      "name": "Plugins.Modding.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "06cc9c4faddbca39804d4fbfebc7eaebdb171651c7250b2cbfb9d3dfbf1392a7",
+      "referenceSha256": "06cc9c4faddbca39804d4fbfebc7eaebdb171651c7250b2cbfb9d3dfbf1392a7"
+    },
+    {
+      "name": "Plugins.NameGen.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "eee3fe5242c2eab551e9b5a9dbe6e1c11af087aeb48f3e55fe1ed30ca508c241",
+      "referenceSha256": "eee3fe5242c2eab551e9b5a9dbe6e1c11af087aeb48f3e55fe1ed30ca508c241"
+    },
+    {
+      "name": "Plugins.NoiseSystem.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "f994eae715faf341cc77f547a64eb417d82cd322d938d838311198a38ba0049c",
+      "referenceSha256": "f994eae715faf341cc77f547a64eb417d82cd322d938d838311198a38ba0049c"
+    },
+    {
+      "name": "Plugins.Scripting.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "535f0130b3f7081c7ecbb5236feddaeadf6d5f2daa316892e81b12f9a0f25e0a",
+      "referenceSha256": "535f0130b3f7081c7ecbb5236feddaeadf6d5f2daa316892e81b12f9a0f25e0a"
+    },
+    {
+      "name": "Plugins.Sound.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "b73abe1a74ea7f530764d33bf541ffa8096f84b17f9d455916b50be752a77868",
+      "referenceSha256": "b73abe1a74ea7f530764d33bf541ffa8096f84b17f9d455916b50be752a77868"
+    },
+    {
+      "name": "Plugins.Tween.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "c4c95245a2e93c7a1dd09ef9a720caf0194dea5b215b379094a03011a02ce828",
+      "referenceSha256": "c4c95245a2e93c7a1dd09ef9a720caf0194dea5b215b379094a03011a02ce828"
+    },
+    {
+      "name": "Plugins.UI.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "76c0f817586d9bc0860ca77d1ce81d6f01ef6e99169d7f09c0dc2f5798e6886d",
+      "referenceSha256": "76c0f817586d9bc0860ca77d1ce81d6f01ef6e99169d7f09c0dc2f5798e6886d"
+    },
+    {
+      "name": "Plugins.Util.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "8805055c4730072467a51d00c7896d1e62677d6479fbe98e553e5256cc37a5a7",
+      "referenceSha256": "8805055c4730072467a51d00c7896d1e62677d6479fbe98e553e5256cc37a5a7"
+    },
+    {
+      "name": "Pluralize.NET.dll",
+      "assemblyVersion": "1.0.2.0",
+      "sourceSha256": "39ab7fdf1cce34ce913f1665e966b0dfde0989b3d070cc9393e5f35b0d5f522f",
+      "referenceSha256": "39ab7fdf1cce34ce913f1665e966b0dfde0989b3d070cc9393e5f35b0d5f522f"
+    },
+    {
+      "name": "PrecisionCats.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "27352c0108b3bd6af400a832432038212020ca265f50c93abdea834efedb54f8",
+      "referenceSha256": "27352c0108b3bd6af400a832432038212020ca265f50c93abdea834efedb54f8"
+    },
+    {
+      "name": "Reflex.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "4c5f85506d986365c90caa2bdcf60336e35397fced93a3f03d78d8d3256ae0ca",
+      "referenceSha256": "4c5f85506d986365c90caa2bdcf60336e35397fced93a3f03d78d8d3256ae0ca"
+    },
+    {
+      "name": "Sirenix.OdinInspector.Attributes.dll",
+      "assemblyVersion": "1.0.0.0",
+      "sourceSha256": "de1dbeacb66939771a198f2079ec66ae60ad533a88e3f4c4880531f6342657ec",
+      "referenceSha256": "de1dbeacb66939771a198f2079ec66ae60ad533a88e3f4c4880531f6342657ec"
+    },
+    {
+      "name": "UniTask.Addressables.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "8064b3f3bb938aea7ab9817bd0671a2570473ef0abd1104afa480ec39563cc9b",
+      "referenceSha256": "8064b3f3bb938aea7ab9817bd0671a2570473ef0abd1104afa480ec39563cc9b"
+    },
+    {
+      "name": "UniTask.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "fb8a8fb30b1354964952ef089fa10d5b9b36bff1d44ee61ef09c8561b516c0a9",
+      "referenceSha256": "fb8a8fb30b1354964952ef089fa10d5b9b36bff1d44ee61ef09c8561b516c0a9"
+    },
+    {
+      "name": "UniTask.DOTween.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "7a8071384bdb0c923fec8f96c0b793369270f770113a28d8381febf90372be18",
+      "referenceSha256": "7a8071384bdb0c923fec8f96c0b793369270f770113a28d8381febf90372be18"
+    },
+    {
+      "name": "UniTask.Linq.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "f4b48aaf1dc94e47e2ed1bd8963fbf39f348c035b4541628bbc3683ad25c1574",
+      "referenceSha256": "f4b48aaf1dc94e47e2ed1bd8963fbf39f348c035b4541628bbc3683ad25c1574"
+    },
+    {
+      "name": "UniTask.TextMeshPro.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "76c149569f747f3162a488c218d16cc34b868680a797134a9671d5f3a33fa1e8",
+      "referenceSha256": "76c149569f747f3162a488c218d16cc34b868680a797134a9671d5f3a33fa1e8"
+    },
+    {
+      "name": "Unity.Mathematics.dll",
+      "assemblyVersion": "1.0.0.0",
+      "sourceSha256": "5a145b0f36b6fd1aff7ec3b552ffe7a9472b795be753a9ef378d4d115abff394",
+      "referenceSha256": "5a145b0f36b6fd1aff7ec3b552ffe7a9472b795be753a9ef378d4d115abff394"
+    },
+    {
+      "name": "Unity.TextMeshPro.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "a3be24d60c6998d9ee0e1bef3fe4e95e71fe7a44b5ffed3577967306adfebc25",
+      "referenceSha256": "a3be24d60c6998d9ee0e1bef3fe4e95e71fe7a44b5ffed3577967306adfebc25"
+    },
+    {
+      "name": "UnityEngine.AccessibilityModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "6e79dd20d0dd57775a2886fc99b277cf0821fef2a38afc132630d6dc2a7d9e89",
+      "referenceSha256": "6e79dd20d0dd57775a2886fc99b277cf0821fef2a38afc132630d6dc2a7d9e89"
+    },
+    {
+      "name": "UnityEngine.AIModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "0e146e4f4ce075a50d729caf8fa325119ceda197d4487c963f6a8586ac2f477f",
+      "referenceSha256": "0e146e4f4ce075a50d729caf8fa325119ceda197d4487c963f6a8586ac2f477f"
+    },
+    {
+      "name": "UnityEngine.AndroidJNIModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "0d2820f1b0921608044d33172b38b0eef0251ebb7c4a190af848d7e1f13e2a98",
+      "referenceSha256": "0d2820f1b0921608044d33172b38b0eef0251ebb7c4a190af848d7e1f13e2a98"
+    },
+    {
+      "name": "UnityEngine.AnimationModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "64168fae79224376a898cb9decb7a579dd6cf4e8e6ce3984e879b84b5085f3a9",
+      "referenceSha256": "64168fae79224376a898cb9decb7a579dd6cf4e8e6ce3984e879b84b5085f3a9"
+    },
+    {
+      "name": "UnityEngine.ARModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "0506de4e867ed3bddb20b45c0fdb06ab9c484c6b357ed752991cd4fa4f6588d0",
+      "referenceSha256": "0506de4e867ed3bddb20b45c0fdb06ab9c484c6b357ed752991cd4fa4f6588d0"
+    },
+    {
+      "name": "UnityEngine.AssetBundleModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "96b019c9aa180b6dc9411407ef14f5596b72fa6eab6179deff7798757c104307",
+      "referenceSha256": "96b019c9aa180b6dc9411407ef14f5596b72fa6eab6179deff7798757c104307"
+    },
+    {
+      "name": "UnityEngine.AudioModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "7a642d3965fc0c9d43900b0687cfd993f0a2e4ad097ebaefd936fa51e7da042e",
+      "referenceSha256": "7a642d3965fc0c9d43900b0687cfd993f0a2e4ad097ebaefd936fa51e7da042e"
+    },
+    {
+      "name": "UnityEngine.ClothModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "147454e0ee3c05f4ab1aa2ae9d91b524958fa41b504aa218a30e0778d1b995a8",
+      "referenceSha256": "147454e0ee3c05f4ab1aa2ae9d91b524958fa41b504aa218a30e0778d1b995a8"
+    },
+    {
+      "name": "UnityEngine.ClusterInputModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "b1b0714b3f15b6cf2ffe5db8413c63092d807dcc4f760c0c524230b2a2a5de78",
+      "referenceSha256": "b1b0714b3f15b6cf2ffe5db8413c63092d807dcc4f760c0c524230b2a2a5de78"
+    },
+    {
+      "name": "UnityEngine.ClusterRendererModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "97a9ec656cd0a68ed3c38186bc783e551af36fc5d675b93304f11363ee85f95a",
+      "referenceSha256": "97a9ec656cd0a68ed3c38186bc783e551af36fc5d675b93304f11363ee85f95a"
+    },
+    {
+      "name": "UnityEngine.CoreModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "6305c82c17ffe111a016e8d8ca3e8b2d9203980b4f58cb6e90171e5629994290",
+      "referenceSha256": "6305c82c17ffe111a016e8d8ca3e8b2d9203980b4f58cb6e90171e5629994290"
+    },
+    {
+      "name": "UnityEngine.CrashReportingModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "a795a52d3816e4ecf41d3fef8589726af51ee4f37afa3a3451bee3405bea1928",
+      "referenceSha256": "a795a52d3816e4ecf41d3fef8589726af51ee4f37afa3a3451bee3405bea1928"
+    },
+    {
+      "name": "UnityEngine.DirectorModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "065dc4107ef161fbcd7a7c2e2952d49953d2db2778228225b97276b658d39fc5",
+      "referenceSha256": "065dc4107ef161fbcd7a7c2e2952d49953d2db2778228225b97276b658d39fc5"
+    },
+    {
+      "name": "UnityEngine.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "9a12de40d47d4c054025d79c2243b8abc781a662336af2068440b2cb67d14c1e",
+      "referenceSha256": "9a12de40d47d4c054025d79c2243b8abc781a662336af2068440b2cb67d14c1e"
+    },
+    {
+      "name": "UnityEngine.DSPGraphModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "6769929d6e18c35113964d6deb5e7ebb7a77a5ae25596327f52f0b8e82b155cb",
+      "referenceSha256": "6769929d6e18c35113964d6deb5e7ebb7a77a5ae25596327f52f0b8e82b155cb"
+    },
+    {
+      "name": "UnityEngine.GameCenterModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "44a0197ca9e58826e6b00ba095182805ba3c81b3f9065b9f6efeaa5c74f573a4",
+      "referenceSha256": "44a0197ca9e58826e6b00ba095182805ba3c81b3f9065b9f6efeaa5c74f573a4"
+    },
+    {
+      "name": "UnityEngine.GIModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "b15841684189465dfb27793574fc6cf41e509b2551aca279d902a15c8b3790a5",
+      "referenceSha256": "b15841684189465dfb27793574fc6cf41e509b2551aca279d902a15c8b3790a5"
+    },
+    {
+      "name": "UnityEngine.GridModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "4157665c0e44c186e5dd0c16521c784f374c287ef30e9d2584268020a0a94fd6",
+      "referenceSha256": "4157665c0e44c186e5dd0c16521c784f374c287ef30e9d2584268020a0a94fd6"
+    },
+    {
+      "name": "UnityEngine.HotReloadModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "5f2f1b96925b746c63a5bd6f777d21a19b372796cdfe9ee2d12f5ac5368e5dd3",
+      "referenceSha256": "5f2f1b96925b746c63a5bd6f777d21a19b372796cdfe9ee2d12f5ac5368e5dd3"
+    },
+    {
+      "name": "UnityEngine.ImageConversionModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "a9fef4839c01e13bf7765643abd4cf033ba5ed47d695cff008d8fab99172295a",
+      "referenceSha256": "a9fef4839c01e13bf7765643abd4cf033ba5ed47d695cff008d8fab99172295a"
+    },
+    {
+      "name": "UnityEngine.IMGUIModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "87c2364c9ed726c3bc23c14372eeed53a7ec7becd6b82a18c3516d81b66959aa",
+      "referenceSha256": "87c2364c9ed726c3bc23c14372eeed53a7ec7becd6b82a18c3516d81b66959aa"
+    },
+    {
+      "name": "UnityEngine.InputLegacyModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "baf0b5dc09c0e53472764f99229fa302529f285c133f0648eba2a370b9cc3284",
+      "referenceSha256": "baf0b5dc09c0e53472764f99229fa302529f285c133f0648eba2a370b9cc3284"
+    },
+    {
+      "name": "UnityEngine.InputModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "902b386f9335f9ff9009006ebd418dc6348ed722ec105d0955f3709f202c00ae",
+      "referenceSha256": "902b386f9335f9ff9009006ebd418dc6348ed722ec105d0955f3709f202c00ae"
+    },
+    {
+      "name": "UnityEngine.JSONSerializeModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "a5f2e3b3bdc5899db172e964690bc18459eb3ca9dcd989df41c662ceec4834a9",
+      "referenceSha256": "a5f2e3b3bdc5899db172e964690bc18459eb3ca9dcd989df41c662ceec4834a9"
+    },
+    {
+      "name": "UnityEngine.LocalizationModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "8a97c7992621cb7d233c0906a3f80ec6fddbe0fe163e679f63eea8de621551ab",
+      "referenceSha256": "8a97c7992621cb7d233c0906a3f80ec6fddbe0fe163e679f63eea8de621551ab"
+    },
+    {
+      "name": "UnityEngine.NVIDIAModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "bcf08b7db726be812d7fa3543210a7bbdcba74fc8adaab5de85d1b7b1bbc53fd",
+      "referenceSha256": "bcf08b7db726be812d7fa3543210a7bbdcba74fc8adaab5de85d1b7b1bbc53fd"
+    },
+    {
+      "name": "UnityEngine.ParticleSystemModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "50953d04f22b4309b9ef6f2b607bbe2c88f68da5bfcd92dd6f7098845fc36dcf",
+      "referenceSha256": "50953d04f22b4309b9ef6f2b607bbe2c88f68da5bfcd92dd6f7098845fc36dcf"
+    },
+    {
+      "name": "UnityEngine.PerformanceReportingModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "3c86942aa6ffed34cdf5934e800872dc48f1ad3936de4e75e3d171dcc3d00ea4",
+      "referenceSha256": "3c86942aa6ffed34cdf5934e800872dc48f1ad3936de4e75e3d171dcc3d00ea4"
+    },
+    {
+      "name": "UnityEngine.Physics2DModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "b0a395d8c25a072e6ed117aabdd65a9b02a84e62256bf115a5d814fc63082b8b",
+      "referenceSha256": "b0a395d8c25a072e6ed117aabdd65a9b02a84e62256bf115a5d814fc63082b8b"
+    },
+    {
+      "name": "UnityEngine.PhysicsModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "bb2479e5abf7fa41be1bbe21781dacda5289be95b7a8506e67a28c712ecdb60a",
+      "referenceSha256": "bb2479e5abf7fa41be1bbe21781dacda5289be95b7a8506e67a28c712ecdb60a"
+    },
+    {
+      "name": "UnityEngine.ProfilerModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "28bf701ae1f23cf720992f3bf8a0a8d0b8cd907c8ad050ba4ad2dd059acb97ea",
+      "referenceSha256": "28bf701ae1f23cf720992f3bf8a0a8d0b8cd907c8ad050ba4ad2dd059acb97ea"
+    },
+    {
+      "name": "UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "b8899f6b6352e5adc09c609a5edfb9ae80496c824f739691675fa4d624dfca26",
+      "referenceSha256": "b8899f6b6352e5adc09c609a5edfb9ae80496c824f739691675fa4d624dfca26"
+    },
+    {
+      "name": "UnityEngine.ScreenCaptureModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "9ef7ab6c002b928fd14640b09c356e4f78d933e912ed6a735007ad46fed8fb6b",
+      "referenceSha256": "9ef7ab6c002b928fd14640b09c356e4f78d933e912ed6a735007ad46fed8fb6b"
+    },
+    {
+      "name": "UnityEngine.SharedInternalsModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "0ff3e7dbdf4656c32ea96842d423143203118d1717a73088e73d79f8f85d3b87",
+      "referenceSha256": "0ff3e7dbdf4656c32ea96842d423143203118d1717a73088e73d79f8f85d3b87"
+    },
+    {
+      "name": "UnityEngine.SpriteMaskModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "9d05d0e16b621bf84fa065b9c1e2fd4b0f437184bcd212cfa5e6c5394b4f3055",
+      "referenceSha256": "9d05d0e16b621bf84fa065b9c1e2fd4b0f437184bcd212cfa5e6c5394b4f3055"
+    },
+    {
+      "name": "UnityEngine.SpriteShapeModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "7ddbfb00a941786bde056acb612b7ec508e428f82ac49c38d8972fbf220601ca",
+      "referenceSha256": "7ddbfb00a941786bde056acb612b7ec508e428f82ac49c38d8972fbf220601ca"
+    },
+    {
+      "name": "UnityEngine.StreamingModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "a54abe0000833fd12454d74f77ee55e764c49bec4244b7e0997baa1cee855ba4",
+      "referenceSha256": "a54abe0000833fd12454d74f77ee55e764c49bec4244b7e0997baa1cee855ba4"
+    },
+    {
+      "name": "UnityEngine.SubstanceModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "2045b3c368125407a5c87876bbb193b365dfea51e354972af7ac48215052e772",
+      "referenceSha256": "2045b3c368125407a5c87876bbb193b365dfea51e354972af7ac48215052e772"
+    },
+    {
+      "name": "UnityEngine.SubsystemsModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "b7d300cec3ede9664dea0c5107093a8dd237c154bea3b433f620bf0acc752b41",
+      "referenceSha256": "b7d300cec3ede9664dea0c5107093a8dd237c154bea3b433f620bf0acc752b41"
+    },
+    {
+      "name": "UnityEngine.TerrainModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "769c4e8ab5ad7134edc8b769ba8361389f7ca769e4f689b5e166f2434945ba3f",
+      "referenceSha256": "769c4e8ab5ad7134edc8b769ba8361389f7ca769e4f689b5e166f2434945ba3f"
+    },
+    {
+      "name": "UnityEngine.TerrainPhysicsModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "d1c9b5c75f429cee9c4479534af47161870bf7ea852ed6a79115d8fa1617f2fb",
+      "referenceSha256": "d1c9b5c75f429cee9c4479534af47161870bf7ea852ed6a79115d8fa1617f2fb"
+    },
+    {
+      "name": "UnityEngine.TextCoreFontEngineModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "47fe78a14c8aab2f387d742f92d453b055973470cfc3e38c588e0d09c576240a",
+      "referenceSha256": "47fe78a14c8aab2f387d742f92d453b055973470cfc3e38c588e0d09c576240a"
+    },
+    {
+      "name": "UnityEngine.TextCoreTextEngineModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "3973888c683398979898808715cdb6a22e090e447ce6e01d25d37e669b5d57d8",
+      "referenceSha256": "3973888c683398979898808715cdb6a22e090e447ce6e01d25d37e669b5d57d8"
+    },
+    {
+      "name": "UnityEngine.TextRenderingModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "08af4550bccab28a7d1b59a4ec9690c32e2ac75e19ff4ebbd61e0ef65d9f7778",
+      "referenceSha256": "08af4550bccab28a7d1b59a4ec9690c32e2ac75e19ff4ebbd61e0ef65d9f7778"
+    },
+    {
+      "name": "UnityEngine.TilemapModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "5dff86ac3994e558c2c3b6b86a4ca3bbc36db1c5b203f41e07c660a6b1c2c1e2",
+      "referenceSha256": "5dff86ac3994e558c2c3b6b86a4ca3bbc36db1c5b203f41e07c660a6b1c2c1e2"
+    },
+    {
+      "name": "UnityEngine.TLSModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "428284dfc8867671f5c20b5aa94134479223d185c1d05e1f600fb6f9fbf43fca",
+      "referenceSha256": "428284dfc8867671f5c20b5aa94134479223d185c1d05e1f600fb6f9fbf43fca"
+    },
+    {
+      "name": "UnityEngine.UI.dll",
+      "assemblyVersion": "1.0.0.0",
+      "sourceSha256": "80453cf58038f92cc3bbaa4ba98b86e688265b92de52d684cc2e9718a7866a91",
+      "referenceSha256": "80453cf58038f92cc3bbaa4ba98b86e688265b92de52d684cc2e9718a7866a91"
+    },
+    {
+      "name": "UnityEngine.UIElementsModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "79a0fec84e740442c694fc9ec1622346511058cda04f8ac645cb83b7d4615f27",
+      "referenceSha256": "79a0fec84e740442c694fc9ec1622346511058cda04f8ac645cb83b7d4615f27"
+    },
+    {
+      "name": "UnityEngine.UIElementsNativeModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "d6e63fd80b8c7d334a51b754d8e335a1ef7dd352531e176f893dc968bbf62e77",
+      "referenceSha256": "d6e63fd80b8c7d334a51b754d8e335a1ef7dd352531e176f893dc968bbf62e77"
+    },
+    {
+      "name": "UnityEngine.UIModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "6935840627678481761e168e19a51e8be837812fc458ae8ebc37d02760e725de",
+      "referenceSha256": "6935840627678481761e168e19a51e8be837812fc458ae8ebc37d02760e725de"
+    },
+    {
+      "name": "UnityEngine.UmbraModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "aace4e50b7c6a1cbd9fb068922a4058fa6550d7461970012dc5d8c7af8d2dc7a",
+      "referenceSha256": "aace4e50b7c6a1cbd9fb068922a4058fa6550d7461970012dc5d8c7af8d2dc7a"
+    },
+    {
+      "name": "UnityEngine.UNETModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "fc8af2f27ce30bc60b82fd545f1f4ee5c048a2db1acc36e8034bd4b46f025703",
+      "referenceSha256": "fc8af2f27ce30bc60b82fd545f1f4ee5c048a2db1acc36e8034bd4b46f025703"
+    },
+    {
+      "name": "UnityEngine.UnityAnalyticsCommonModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "3d513c15274195518f1210a64a6a3b3b9b20049d1def114ceff00680adfccfa7",
+      "referenceSha256": "3d513c15274195518f1210a64a6a3b3b9b20049d1def114ceff00680adfccfa7"
+    },
+    {
+      "name": "UnityEngine.UnityAnalyticsModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "9d2637fed74eb6e4eaa8861e95b34cfe8180e5977f8f82d95010eac552a41f88",
+      "referenceSha256": "9d2637fed74eb6e4eaa8861e95b34cfe8180e5977f8f82d95010eac552a41f88"
+    },
+    {
+      "name": "UnityEngine.UnityConnectModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "6c0d2413b404cd0319ee6348be4a7a71a41796d532e5a5330dc6038aa7f0f094",
+      "referenceSha256": "6c0d2413b404cd0319ee6348be4a7a71a41796d532e5a5330dc6038aa7f0f094"
+    },
+    {
+      "name": "UnityEngine.UnityCurlModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "8bb5e075829fcc9e92929b0ad299d1c7ba77a9292e83a1d798b6da13b41530c4",
+      "referenceSha256": "8bb5e075829fcc9e92929b0ad299d1c7ba77a9292e83a1d798b6da13b41530c4"
+    },
+    {
+      "name": "UnityEngine.UnityTestProtocolModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "e6aadf722be1d79157f0b5f17f5c0ba31f6b7bf0d833b116853a06ef5a5effbf",
+      "referenceSha256": "e6aadf722be1d79157f0b5f17f5c0ba31f6b7bf0d833b116853a06ef5a5effbf"
+    },
+    {
+      "name": "UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "d559a01ff9df970284c31e3b13fefe887424ef6fc2eb75c6423f10fa1ffc1094",
+      "referenceSha256": "d559a01ff9df970284c31e3b13fefe887424ef6fc2eb75c6423f10fa1ffc1094"
+    },
+    {
+      "name": "UnityEngine.UnityWebRequestAudioModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "0bccfba6e098731a4ccd541289cd6525b3827594d1e3366b980282a0fd93e860",
+      "referenceSha256": "0bccfba6e098731a4ccd541289cd6525b3827594d1e3366b980282a0fd93e860"
+    },
+    {
+      "name": "UnityEngine.UnityWebRequestModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "640941c5c01caa3501e5a60e9a4884b70a53cf5379d282ca9bdcb598a5677a0a",
+      "referenceSha256": "640941c5c01caa3501e5a60e9a4884b70a53cf5379d282ca9bdcb598a5677a0a"
+    },
+    {
+      "name": "UnityEngine.UnityWebRequestTextureModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "8aad526b82e82ce22a4e6059872d2c9addf2ef0ae3cad5f017481abf1f1348f6",
+      "referenceSha256": "8aad526b82e82ce22a4e6059872d2c9addf2ef0ae3cad5f017481abf1f1348f6"
+    },
+    {
+      "name": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "d0eb8ca1ad6044f3411bae92a7f6c49cfe94a4fa6d935fcaa2a337c57bf7460c",
+      "referenceSha256": "d0eb8ca1ad6044f3411bae92a7f6c49cfe94a4fa6d935fcaa2a337c57bf7460c"
+    },
+    {
+      "name": "UnityEngine.VehiclesModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "e99d72d5a6bfe007961b67d311494eb707e824bf51aa7f164a6218d0c1833a22",
+      "referenceSha256": "e99d72d5a6bfe007961b67d311494eb707e824bf51aa7f164a6218d0c1833a22"
+    },
+    {
+      "name": "UnityEngine.VFXModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "2224e31e15a99034c384194b5637542e38ee537913c45f1d8cd4f6c6f467dc77",
+      "referenceSha256": "2224e31e15a99034c384194b5637542e38ee537913c45f1d8cd4f6c6f467dc77"
+    },
+    {
+      "name": "UnityEngine.VideoModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "22a9aa600cb3074270ea9f4b23dd0890353fc40bac989a7fd5afeb8ebf917838",
+      "referenceSha256": "22a9aa600cb3074270ea9f4b23dd0890353fc40bac989a7fd5afeb8ebf917838"
+    },
+    {
+      "name": "UnityEngine.VirtualTexturingModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "0d6da3beb09e976e5d1add43c61d89e482a85c0708122079f43d0f65166724dd",
+      "referenceSha256": "0d6da3beb09e976e5d1add43c61d89e482a85c0708122079f43d0f65166724dd"
+    },
+    {
+      "name": "UnityEngine.VRModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "9acef6bd15010d3ae622ac64068b0dc99b4ca5ea135895d24960790a1ec5e0b9",
+      "referenceSha256": "9acef6bd15010d3ae622ac64068b0dc99b4ca5ea135895d24960790a1ec5e0b9"
+    },
+    {
+      "name": "UnityEngine.WindModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "a29437eb9a7b9a9a2bd307e8ecd641e45e9b422a31b946bee1e8c95405e25b80",
+      "referenceSha256": "a29437eb9a7b9a9a2bd307e8ecd641e45e9b422a31b946bee1e8c95405e25b80"
+    },
+    {
+      "name": "UnityEngine.XRModule.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "f21d8afe8eb008d1094217201c587d86d83688fb0d1a98028c1703301c891c02",
+      "referenceSha256": "f21d8afe8eb008d1094217201c587d86d83688fb0d1a98028c1703301c891c02"
+    }
+  ]
+}

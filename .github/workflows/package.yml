@@ -1,0 +1,113 @@
+name: Build and publish GameLibs
+
+on:
+  push:
+    branches: ['**']
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Publish the snapshot to nuget.org and GitHub Releases (main or version tag)
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gamelibs-${{ github.event_name == 'workflow_dispatch' && inputs.publish && 'publish' || 'ci' }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref_type != 'tag' && !(github.event_name == 'workflow_dispatch' && inputs.publish) }}
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      version: ${{ steps.snapshot.outputs.version }}
+      steam_build: ${{ steps.snapshot.outputs.steam_build }}
+      assembly_count: ${{ steps.snapshot.outputs.assembly_count }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Inspect reference snapshot
+        id: snapshot
+        run: dotnet run --project tools/GameLibsTool/GameLibsTool.csproj -- "$PWD"
+      - name: Validate publication ref
+        env:
+          REF_TYPE: ${{ github.ref_type }}
+          REF_NAME: ${{ github.ref_name }}
+          VERSION: ${{ steps.snapshot.outputs.version }}
+          MANUAL_PUBLISH: ${{ inputs.publish }}
+        run: |
+          if [ "$REF_TYPE" == tag ] && [ "$REF_NAME" != "v$VERSION" ]; then
+            echo "Tag must match GameLibs.props: v$VERSION" >&2
+            exit 1
+          fi
+          if [ "$MANUAL_PUBLISH" == true ] && [ "$REF_TYPE" != tag ] && [ "$REF_NAME" != main ]; then
+            echo 'Select main or a matching version tag for publication.' >&2
+            exit 1
+          fi
+      - name: Pack compile-only references
+        run: dotnet pack GameLibs.csproj --configuration Release --output artifacts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: game-libs
+          path: artifacts/*.nupkg
+          if-no-files-found: error
+          retention-days: 14
+
+  publish:
+    needs: package
+    if: (github.event_name == 'push' && github.ref_type == 'tag') || (github.event_name == 'workflow_dispatch' && inputs.publish)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      id-token: write
+    concurrency:
+      group: gamelibs-publication
+      cancel-in-progress: false
+      queue: max
+    steps:
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - uses: actions/download-artifact@v4
+        with:
+          name: game-libs
+          path: artifacts
+      - name: Check NuGet account configuration
+        env:
+          NUGET_USER: ${{ vars.NUGET_USER }}
+        run: |
+          if [ -z "$NUGET_USER" ]; then
+            echo 'Set the NUGET_USER repository variable to your nuget.org profile username and configure Trusted Publishing.' >&2
+            exit 1
+          fi
+      - name: Authenticate to NuGet with GitHub OIDC
+        id: nuget-login
+        uses: NuGet/login@8d196754b4036150537f80ac539e15c2f1028841 # v1
+        with:
+          user: ${{ vars.NUGET_USER }}
+      - name: Publish to nuget.org
+        env:
+          NUGET_API_KEY: ${{ steps.nuget-login.outputs.NUGET_API_KEY }}
+        run: |
+          dotnet nuget push 'artifacts/*.nupkg' --source https://api.nuget.org/v3/index.json --api-key "$NUGET_API_KEY" --skip-duplicate
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3
+        with:
+          tag_name: v${{ needs.package.outputs.version }}
+          target_commitish: ${{ github.sha }}
+          name: ${{ needs.package.outputs.version }}
+          body: |
+            Compile-only references from Elin Steam build ${{ needs.package.outputs.steam_build }}.
+            Includes full managed game, Unity and third-party assemblies.
+            NuGet package: Somepoi.Elin.GameLibs ${{ needs.package.outputs.version }}.
+          files: artifacts/*.nupkg
+          fail_on_unmatched_files: true

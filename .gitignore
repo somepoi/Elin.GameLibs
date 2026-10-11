@@ -1,0 +1,7 @@
+bin/
+obj/
+.ci/
+artifacts/
+.vs/
+.idea/
+*.user

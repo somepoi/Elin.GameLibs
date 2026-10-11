@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="GameLibs.props" />
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageId>Somepoi.Elin.GameLibs</PackageId>
+    <Authors>somepoi</Authors>
+    <Description>All Elin managed game, Unity and third-party compile references from Steam build $(SteamBuildId). Full DLLs.</Description>
+    <PackageTags>Elin;Unity;modding;GameLibs;references</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <NoBuild>true</NoBuild>
+    <!-- Reference-only PackageReference package; legacy packages.config is unsupported. -->
+    <NoWarn>$(NoWarn);NU5131</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="references/*.dll" Pack="true" PackagePath="ref/netstandard2.1/" />
+    <None Include="provenance.json" Pack="true" PackagePath="" />
+    <None Include="README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <Target Name="ValidateSnapshot" BeforeTargets="GenerateNuspec">
+    <Exec Command="dotnet run --project &quot;$(MSBuildProjectDirectory)/tools/GameLibsTool/GameLibsTool.csproj&quot; -- &quot;$(MSBuildProjectDirectory)&quot;" />
+  </Target>
+</Project>
