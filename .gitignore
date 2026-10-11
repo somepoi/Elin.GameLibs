@@ -5,3 +5,5 @@ artifacts/
 .vs/
 .idea/
 *.user
+/scripts/Publish-GameLibs.*
+Update-Gamelibs.bat
