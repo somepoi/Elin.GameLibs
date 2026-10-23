@@ -1,9 +1,10 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "steamAppId": 2135150,
   "steamBuildId": "25859432",
+  "gameVersion": "0.23.355",
   "revision": 0,
-  "packageVersion": "0.25859432.0",
+  "packageVersion": "0.23.355",
   "assemblyFormat": "Original DLLs; bodies/resources/visibility preserved",
   "excludedFrameworkAssemblies": [
     "Mono.Security.dll",
@@ -59,16 +60,16 @@
       "referenceSha256": "22e12d74c917c2818264278b7c42dcf910d93059d5cd12e1938fd34ee359d1cd"
     },
     {
-      "name": "Assembly-CSharp-firstpass.dll",
-      "assemblyVersion": "0.0.0.0",
-      "sourceSha256": "3f179a5430f735f090e01224380c137b4ffe118dd28cf1996fac148375647d57",
-      "referenceSha256": "3f179a5430f735f090e01224380c137b4ffe118dd28cf1996fac148375647d57"
-    },
-    {
       "name": "Assembly-CSharp.dll",
       "assemblyVersion": "0.0.0.0",
       "sourceSha256": "6f265f70b59242bb76e3dcdd657f7730ff723af0b5c8a75c4cecbd5592b31d1c",
       "referenceSha256": "6f265f70b59242bb76e3dcdd657f7730ff723af0b5c8a75c4cecbd5592b31d1c"
+    },
+    {
+      "name": "Assembly-CSharp-firstpass.dll",
+      "assemblyVersion": "0.0.0.0",
+      "sourceSha256": "3f179a5430f735f090e01224380c137b4ffe118dd28cf1996fac148375647d57",
+      "referenceSha256": "3f179a5430f735f090e01224380c137b4ffe118dd28cf1996fac148375647d57"
     },
     {
       "name": "ClassLibrary2.dll",

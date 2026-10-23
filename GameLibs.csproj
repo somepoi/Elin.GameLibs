@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>Somepoi.Elin.GameLibs</PackageId>
     <Authors>somepoi</Authors>
-    <Description>All Elin managed game, Unity and third-party compile references from Steam build $(SteamBuildId). Full DLLs.</Description>
+    <Description>All Elin $(GameVersion) managed game, Unity and third-party compile references. Full DLLs.</Description>
     <PackageTags>Elin;Unity;modding;GameLibs;references</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <IncludeBuildOutput>false</IncludeBuildOutput>

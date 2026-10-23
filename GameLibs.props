@@ -1,7 +1,9 @@
 <Project>
   <PropertyGroup>
     <SteamBuildId>25859432</SteamBuildId>
+    <GameVersion>0.23.355</GameVersion>
     <PackageRevision>0</PackageRevision>
-    <PackageVersion>0.$(SteamBuildId).$(PackageRevision)</PackageVersion>
+    <PackageVersion>$(GameVersion)</PackageVersion>
+    <PackageVersion Condition="'$(PackageRevision)' != '0'">$(GameVersion)-repack.$(PackageRevision)</PackageVersion>
   </PropertyGroup>
 </Project>

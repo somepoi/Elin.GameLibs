@@ -12,6 +12,15 @@ $manifestPath = [IO.Path]::GetFullPath((Join-Path $gameRoot '../../appmanifest_2
 $manifest = Get-Content -LiteralPath $manifestPath -Raw
 if ($manifest -notmatch '"buildid"\s+"(\d+)"') { throw "Steam build ID missing: $manifestPath" }
 $buildId = $Matches[1]
+$versionPath = Join-Path $gameRoot 'version.json'
+$versionInfo = Get-Content -LiteralPath $versionPath -Raw | ConvertFrom-Json
+$gameVersion = $null
+if ($versionInfo.version -notmatch '^\d+\.\d+\.\d+(?:\.\d+)?$' -or
+    -not [Version]::TryParse($versionInfo.version, [ref]$gameVersion)) {
+    throw "Invalid Elin version in $versionPath."
+}
+# NuGet omits a zero fourth component; preserve nonzero game hotfix versions.
+$gameVersion = if ($gameVersion.Revision -gt 0) { $gameVersion.ToString(4) } else { $gameVersion.ToString(3) }
 
 # Framework assemblies come from the consumer's SDK, not from the game snapshot.
 $allFiles = @(Get-ChildItem -LiteralPath $managedRoot -File -Filter '*.dll' | Sort-Object Name)
@@ -30,19 +39,20 @@ $sourceHashes = @{}
 foreach ($source in $sources) { $sourceHashes[$source.Name] = Get-Sha256 $source.FullName }
 $provenancePath = Join-Path $repoRoot 'provenance.json'
 $previous = if (Test-Path -LiteralPath $provenancePath) { Get-Content -LiteralPath $provenancePath -Raw | ConvertFrom-Json } else { $null }
-if ($previous -and $previous.steamBuildId -eq $buildId -and -not $PSBoundParameters.ContainsKey('Revision')) {
+if ($previous -and $previous.gameVersion -eq $gameVersion -and -not $PSBoundParameters.ContainsKey('Revision')) {
     $Revision = [int]$previous.revision
 }
-if ($previous -and $previous.steamBuildId -eq $buildId -and $Revision -lt [int]$previous.revision) {
-    throw "Cannot decrease the package revision for Steam build $buildId. Current revision: $($previous.revision)."
+if ($previous -and $previous.gameVersion -eq $gameVersion -and $Revision -lt [int]$previous.revision) {
+    throw "Cannot decrease the package revision for Elin $gameVersion. Current revision: $($previous.revision)."
 }
-$packageVersion = "0.$buildId.$Revision"
+$packageVersion = $gameVersion
+if ($Revision -gt 0) { $packageVersion += "-repack.$Revision" }
 if ($previous -and $previous.packageVersion -eq $packageVersion) {
     $unchanged = @($previous.assemblies).Count -eq $sources.Count
     foreach ($assembly in $previous.assemblies) {
         if ($sourceHashes[$assembly.name] -ne $assembly.sourceSha256) { $unchanged = $false }
     }
-    if (-not $unchanged) {
+    if (-not $unchanged -or $previous.steamBuildId -ne $buildId) {
         throw "Inputs changed for package $packageVersion. Verify the game installation or use -Revision $($Revision + 1) for an intentional package revision."
     }
     & dotnet pack (Join-Path $repoRoot 'GameLibs.csproj') --configuration Release --output (Join-Path $repoRoot 'artifacts')
@@ -72,9 +82,10 @@ $assemblies = @($sources | ForEach-Object {
     }
 })
 $provenance = [ordered]@{
-    schemaVersion = 1
+    schemaVersion = 2
     steamAppId = 2135150
     steamBuildId = $buildId
+    gameVersion = $gameVersion
     revision = $Revision
     packageVersion = $packageVersion
     assemblyFormat = 'Original DLLs; bodies/resources/visibility preserved'
@@ -86,8 +97,10 @@ $props = @"
 <Project>
   <PropertyGroup>
     <SteamBuildId>$buildId</SteamBuildId>
+    <GameVersion>$gameVersion</GameVersion>
     <PackageRevision>$Revision</PackageRevision>
-    <PackageVersion>0.`$(SteamBuildId).`$(PackageRevision)</PackageVersion>
+    <PackageVersion>`$(GameVersion)</PackageVersion>
+    <PackageVersion Condition="'`$(PackageRevision)' != '0'">`$(GameVersion)-repack.`$(PackageRevision)</PackageVersion>
   </PropertyGroup>
 </Project>
 "@
